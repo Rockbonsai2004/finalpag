@@ -1,0 +1,234 @@
+/* Centrar todo en la pantalla */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6; /* Fondo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Contenedor principal del login */
+  .login-container {
+    background-color: #fff; /* Fondo blanco */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(149, 149, 149, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  /* Estilos para el título */
+  .login-container h1 {
+    margin-bottom: 1.5rem;
+    color: #949292;
+    font-size: 1.8rem;
+  }
+  
+  /* Formulario y sus elementos */
+  .form-group {
+    margin-bottom: 1rem;
+    text-align: left;
+    color: #aaaaaa;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #aaaaaa;
+    font-size: 0.9rem;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    color: #555; /* Color del texto */
+    background-color: #fff; /* Fondo blanco */
+  }
+  
+  button {
+    background-color: #4c4caf; 
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  button:hover {
+    background-color: #312b69; 
+  }
+  
+  /* Ajustar el diseño en dispositivos pequeños */
+  @media (max-width: 600px) {
+    .login-container {
+      padding: 1.5rem;
+    }
+  
+    input {
+      font-size: 0.85rem;
+      color: #555;
+    }
+  
+    button {
+      font-size: 0.9rem;
+    }
+  }
+
+/* usuarios*/
+  
+
+
+.usuarios-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.btn-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.btn-agregar img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.btn-agregar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.btn-agregar:hover {
+  background-color: #45a049;
+}
+
+.tabla-usuarios {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-usuarios th,
+.tabla-usuarios td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  color: #000; /* Texto de las columnas en negro */
+}
+
+.tabla-usuarios th {
+  background-color: #f2f2f2;
+  color: #333; /* Texto del encabezado de la tabla */
+}
+
+.tabla-usuarios tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tabla-usuarios tr:hover {
+  background-color: #f1f1f1;
+}
+
+.btn-accion {
+  background-color: #007BFF;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.btn-accion:hover {
+  background-color: #0056b3;
+}
+/* Estilos para el modal */
+/* Estilos para el modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
+  display: none; /* Se oculta por defecto */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Cuando el modal está activo */
+.modal.show {
+  display: flex;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.cerrar-modal {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cerrar-modal:hover {
+  background-color: #cc0000;
+}
+
+.recuperar-btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 1rem;
+}
+
+.recuperar-btn:hover {
+  background-color: #45a049;
+}
