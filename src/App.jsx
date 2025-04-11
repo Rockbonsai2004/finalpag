@@ -6,7 +6,6 @@ import ubicacionImg from './assets/imagenes/ubicacion.png';
 import condominioImg from './assets/imagenes/condominio.png';
 import serviciosImg from './assets/imagenes/servicios.png';
 import usuarioImg from './assets/imagenes/usuario.png';
-import fondoImg from './assets/imagenes/fondo.jpg';
 
 const App = () => {
   return (
