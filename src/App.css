@@ -16,9 +16,18 @@
 /* Centrar botones de navegación */
 .nav-center {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* de horizontal a vertical */
+  align-items: center;
+  justify-content: flex-start; /* que empiece desde arriba */
   gap: 20px;
-  flex: 1;
+  width: 80px; /* ancho del sidebar */
+  height: 100vh; /* altura total de la ventana */
+  background-color: #f8f9fa; /* color de fondo opcional */
+  padding-top: 20px;
+  position: fixed; /* que se mantenga a la izquierda */
+  left: 0;
+  top: 0;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-item {
@@ -29,11 +38,12 @@
   background-color: transparent;
   border: none;
   padding: 10px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
+  width: 100%;
 }
 
 .nav-item:hover {
@@ -43,8 +53,8 @@
 }
 
 .nav-icon {
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
   margin-bottom: 5px;
 }
 
