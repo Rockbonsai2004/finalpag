@@ -16,19 +16,9 @@
 /* Centrar botones de navegación */
 .nav-center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   gap: 20px;
-  width: 200px; /* Aumentado el ancho del sidebar */
-  height: 100vh;
-  background-color: #f8f9fa;
-  padding-top: 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* debajo del header pero sobre el contenido */
+  flex: 1;
 }
 
 .nav-item {
@@ -39,12 +29,11 @@
   background-color: transparent;
   border: none;
   padding: 10px;
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bold;
   color: #333;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  width: 100%;
 }
 
 .nav-item:hover {
@@ -54,8 +43,8 @@
 }
 
 .nav-icon {
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   margin-bottom: 5px;
 }
 
@@ -86,12 +75,12 @@
   border-radius: 50%;
   margin-bottom: 5px;
 }
-
+ 
 /* Botón flotante de WhatsApp */
 .whatsapp-button {
   position: fixed;
   bottom: 20px;
-  left: 20px; /* Ya estaba a la izquierda, se mantiene */
+  left: 20px;
   z-index: 1000;
 }
 
