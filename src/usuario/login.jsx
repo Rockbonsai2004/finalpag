@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://apicondominio-p4vc.onrender.com/api/login', {
+      const response = await fetch('https://final-355p.onrender.com/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ telefono, contraseña }),
@@ -41,7 +41,7 @@ const Login = () => {
   const handleRecoverPassword = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch('https://apicondominio-p4vc.onrender.com/api/recuperar', {
+      const response = await fetch('https://final-355p.onrender.com/api/recuperar', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ telefono: telefonoRecuperacion }), // Enviar el teléfono directamente

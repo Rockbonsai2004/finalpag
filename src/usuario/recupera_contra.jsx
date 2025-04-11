@@ -16,7 +16,7 @@ const RecuperarContra = () => {
     useEffect(() => {
         const validarToken = async () => {
             try {
-                const response = await axios.post("https://apicondominio-p4vc.onrender.com/api/validar_token_recuperacion", { token });
+                const response = await axios.post("https://final-355p.onrender.com/api/validar_token_recuperacion", { token });
                 if (response.status === 200) {
                     setIsValid(true);
                 }
@@ -39,7 +39,7 @@ const RecuperarContra = () => {
         }
 
         try {
-            const response = await axios.post("https://apicondominio-p4vc.onrender.com/api/cambiar_contra_recuperacion", {
+            const response = await axios.post("https://final-355p.onrender.com/api/cambiar_contra_recuperacion", {
                 token,
                 nuevaContraseña: newPassword,
             });

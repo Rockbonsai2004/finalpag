@@ -19,7 +19,7 @@ const NuevoUser = () => {
   useEffect(() => {
       const fetchDepartamentos = async () => {
         try {
-          const response = await fetch('https://apicondominio-p4vc.onrender.com/api/obtener_departamentos',{
+          const response = await fetch('https://final-355p.onrender.com/api/obtener_departamentos',{
             method: 'GET',
             headers: {
               'Authorization': `Bearer ${token}`,
@@ -48,7 +48,7 @@ const NuevoUser = () => {
     }
 
     try {
-      const response = await fetch('https://apicondominio-p4vc.onrender.com/api/crear_usuario', {
+      const response = await fetch('https://final-355p.onrender.com/api/crear_usuario', {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

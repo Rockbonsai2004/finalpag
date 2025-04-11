@@ -19,7 +19,7 @@ const Navbar = () => {
       if (!userId || !token) return;
       try {
         const response = await fetch(
-          `https://apicondominio-p4vc.onrender.com/api/notificaciones/${userId}`,
+          `https://final-355p.onrender.com/api/notificaciones/${userId}`,
           {
             method: "GET",
             headers: {
